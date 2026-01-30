@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://de7r7lyab88rw" path="res://Scenes/gameUI/speakerContainer.gd" id="1_rcnvp"]
 [ext_resource type="Script" uid="uid://bjobvp2188oql" path="res://Scenes/gameUI/roomContainer.gd" id="2_nr13x"]
+[ext_resource type="Script" uid="uid://ghw0b0j7ftvx" path="res://Scenes/gameUI/movementContainer.gd" id="3_03gcb"]
 
 [node name="GameUi" type="Control" unique_id=1653777319]
 layout_mode = 3
@@ -63,3 +64,11 @@ layout_mode = 2
 [node name="Label" type="Label" parent="roomContainer/date" unique_id=146692373]
 layout_mode = 2
 text = "date"
+
+[node name="movementContainer" type="Container" parent="." unique_id=514554121]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 75.0
+offset_right = 1120.0
+offset_bottom = 619.0
+script = ExtResource("3_03gcb")
