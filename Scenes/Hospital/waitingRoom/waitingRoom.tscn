@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://b86o0tvalxwyd"]
-
-[ext_resource type="PackedScene" uid="uid://bmjwyhfidksl2" path="res://Scenes/gameUI/gameUI.tscn" id="1_1gvhp"]
-
-[node name="WaitingRoom" type="Node2D" unique_id=1183230978]
-
-[node name="GameUi" parent="." unique_id=1653777319 instance=ExtResource("1_1gvhp")]
