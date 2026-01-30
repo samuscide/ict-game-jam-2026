@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bmjwyhfidksl2"]
 
 [ext_resource type="Theme" uid="uid://b3edlo7i72cqp" path="res://Materials/UI.tres" id="1_rcnvp"]
+[ext_resource type="Script" uid="uid://dwoopjfgxk6vc" path="res://Scenes/gameUI/game_ui.gd" id="2_nr13x"]
 
 [node name="GameUi" type="Control" unique_id=1653777319]
 layout_mode = 3
@@ -10,9 +11,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_rcnvp")
+script = ExtResource("2_nr13x")
 
 [node name="dialog" type="Control" parent="." unique_id=2062120445]
-visible = false
 layout_mode = 1
 anchor_left = 0.066
 anchor_top = 0.5
@@ -50,19 +51,30 @@ offset_bottom = 0.101989746
 theme = ExtResource("1_rcnvp")
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare ante id molestie sodales. Maecenas dui nibh, consectetur ut nunc sit amet, hendrerit vehicula quam. Morbi feugiat molestie ultrices."
 
-[node name="optionList" type="VBoxContainer" parent="." unique_id=1542722820]
+[node name="TODO_ dialog background" type="Node" parent="dialog" unique_id=824891443]
+
+[node name="options" type="Control" parent="." unique_id=1070552990]
+anchors_preset = 0
+offset_left = 1296.115
+offset_top = 734.905
+offset_right = 1336.115
+offset_bottom = 774.905
+
+[node name="optionList" type="VBoxContainer" parent="options" unique_id=1542722820]
 layout_mode = 0
-offset_right = 136.0
+offset_right = 219.0
 offset_bottom = 155.0
 
-[node name="movement" type="Button" parent="optionList" unique_id=737790236]
+[node name="movement" type="Button" parent="options/optionList" unique_id=737790236]
 layout_mode = 2
 text = "Movement"
 
-[node name="observe" type="Button" parent="optionList" unique_id=2143006218]
+[node name="observe" type="Button" parent="options/optionList" unique_id=2143006218]
 layout_mode = 2
 text = "Observe"
 
-[node name="communicate" type="Button" parent="optionList" unique_id=1766065032]
+[node name="communicate" type="Button" parent="options/optionList" unique_id=1766065032]
 layout_mode = 2
 text = "Communicate"
+
+[node name="TODO_option background" type="Node" parent="options" unique_id=941472549]
