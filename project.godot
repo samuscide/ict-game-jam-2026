@@ -12,7 +12,6 @@ config_version=5
 
 config/name="ICT Game Jam 2026"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
 
 [physics]
 
