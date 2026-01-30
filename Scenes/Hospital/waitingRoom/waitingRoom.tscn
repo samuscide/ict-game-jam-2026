@@ -1,16 +1,3 @@
 [gd_scene format=3 uid="uid://b86o0tvalxwyd"]
 
-[ext_resource type="PackedScene" uid="uid://bmjwyhfidksl2" path="res://Scenes/gameUI/gameUI.tscn" id="1_1gvhp"]
-
 [node name="WaitingRoom" type="Node2D" unique_id=1183230978]
-
-[node name="GameUi" parent="." unique_id=1653777319 instance=ExtResource("1_1gvhp")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = 74.0
-offset_top = 78.0
-offset_right = 74.0
-offset_bottom = 78.0
-grow_horizontal = 1
-grow_vertical = 1
