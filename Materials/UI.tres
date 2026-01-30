@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://b3edlo7i72cqp"]
+
+[ext_resource type="FontFile" uid="uid://beov44kewk3tu" path="res://Materials/Motherish-Regular.otf" id="1_34fwb"]
+
+[resource]
+default_font_size = 40
+Button/fonts/font = ExtResource("1_34fwb")
