@@ -3,7 +3,7 @@ extends Node
 var currentPlayer: AudioStreamPlayer
 var nextPlayer: AudioStreamPlayer
 
-@export var fadeTime = 1.5
+@export var fadeTime = 0.5
 
 @onready var musicA: AudioStreamPlayer = $MusicA
 @onready var musicB: AudioStreamPlayer = $MusicB

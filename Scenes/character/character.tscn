@@ -1,27 +1,11 @@
 [gd_scene format=3 uid="uid://c1pk7supipygy"]
 
-[ext_resource type="Script" uid="uid://b7b4k4iymiceg" path="res://Scenes/room/room.gd" id="1_jlsmm"]
-[ext_resource type="PackedScene" uid="uid://bmjwyhfidksl2" path="res://Scenes/UI/gameUI.tscn" id="2_6v0tu"]
-[ext_resource type="Script" uid="uid://cyq2qlkyco7r2" path="res://Scenes/room/roomParallax.gd" id="3_i31s5"]
+[ext_resource type="Script" uid="uid://cvdb55qgycd2d" path="res://Scenes/character/character.gd" id="1_4euov"]
+[ext_resource type="Texture2D" uid="uid://dx1gesimcmxv7" path="res://Assets/ppeperson1.png" id="2_kaakq"]
 
-[node name="RoomTemplate" type="Node2D" unique_id=1718267346]
-script = ExtResource("1_jlsmm")
+[node name="Character" type="Node2D" unique_id=589619694]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_4euov")
+texture = ExtResource("2_kaakq")
 
-[node name="GameUi" parent="." unique_id=1653777319 instance=ExtResource("2_6v0tu")]
-top_level = true
-
-[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1725487271]
-script = ExtResource("3_i31s5")
-characterScene = null
-sensitivity = 5
-startPos = Vector2(500, 800)
-
-[node name="background" type="Node2D" parent="Parallax2D" unique_id=2135513620]
-
-[node name="bg_a" type="Sprite2D" parent="Parallax2D/background" unique_id=2080803100]
-position = Vector2(960, 540)
-scale = Vector2(1.3, 1.3)
-
-[node name="bg_b" type="Sprite2D" parent="Parallax2D/background" unique_id=519933799]
-position = Vector2(960, 540)
-scale = Vector2(1.3, 1.3)
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2000851272]
