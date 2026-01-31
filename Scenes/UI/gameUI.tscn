@@ -91,10 +91,10 @@ text = "Exit
 
 [node name="Label" type="Label" parent="." unique_id=249581073]
 layout_mode = 0
-offset_left = 1348.0
-offset_top = 1037.0
-offset_right = 1908.0
-offset_bottom = 1067.0
+offset_left = 1332.0
+offset_top = 1027.0
+offset_right = 1892.0
+offset_bottom = 1057.0
 theme_override_font_sizes/font_size = 21
 text = "ESC: pause menu | Mouse: select item / continue dialog"
 
