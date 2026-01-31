@@ -5,9 +5,9 @@ extends Node2D
 
 @onready var characterSprite = $Sprite2D
 
-func assignSprite() -> void:
+func assignSprite(name: String) -> void:
 	# Assign Texture
-	characterSprite.texture = texture
+	characterSprite.texture = RoomManager.characterLibrary[name]
 	
 	# Create Area2D and collision
 	var area = Area2D.new()
@@ -31,7 +31,7 @@ func assignSprite() -> void:
 	area.input_event.connect(func(event, shape_idx, local_pos): _on_area_input(area, event, shape_idx))
 
 func _ready() -> void:
-	assignSprite()
+	assignSprite("robert")
 
 # Signal function
 func _on_mouse_entered(area):

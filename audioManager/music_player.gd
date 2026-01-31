@@ -11,8 +11,8 @@ var nextPlayer: AudioStreamPlayer
 var musicTween: Tween
 
 var musicLibrary = {
-	"menu": preload("res://Assets/tempAudio/check it out i'm in the house like carpet [aByWFApNKEw].mp3"),
-	"room": preload("res://Assets/tempAudio/Drakengard 3： mikhail's song english version [BWLTHAm_vhM].mp3")
+	"menu": preload("res://Assets/audio/check it out i'm in the house like carpet [aByWFApNKEw].mp3"),
+	"room": preload("res://Assets/audio/Drakengard 3： mikhail's song english version [BWLTHAm_vhM].mp3")
 }
 
 func _ready() -> void:

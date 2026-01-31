@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://b3edlo7i72cqp" path="res://Materials/UI.tres" id="1_rcnvp"]
 [ext_resource type="Script" uid="uid://dwoopjfgxk6vc" path="res://Scenes/UI/game_ui.gd" id="2_nr13x"]
+[ext_resource type="Texture2D" uid="uid://mp5pvshecj7t" path="res://Assets/UI/Dialogue_filler.png" id="3_g7o0n"]
 
 [node name="GameUi" type="Control" unique_id=1653777319]
 layout_mode = 3
@@ -20,23 +21,28 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Label" type="Label" parent="dialog" unique_id=1443556567]
+top_level = true
 layout_mode = 0
-offset_left = 141.0
-offset_top = 549.0
-offset_right = 413.0
-offset_bottom = 604.0
+offset_left = 139.955
+offset_top = 523.875
+offset_right = 411.95502
+offset_bottom = 578.875
 text = "SpeakerName"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="dialog" unique_id=745352608]
+top_level = true
 layout_mode = 0
 offset_left = 149.0
 offset_top = 616.0
-offset_right = 1449.0
-offset_bottom = 922.0
+offset_right = 1557.0
+offset_bottom = 885.0
 text = "This is a test dialog. we should probably at least limit text to 2, maybe 3 sentences before it goes out of scope of this border."
 scroll_active = false
 
-[node name="TODO-dialog border" type="Node" parent="dialog" unique_id=239247889]
+[node name="Sprite2D" type="Sprite2D" parent="dialog" unique_id=852013225]
+position = Vector2(857, 650)
+scale = Vector2(1.3777778, 0.4180328)
+texture = ExtResource("3_g7o0n")
 
 [node name="options" type="Control" parent="." unique_id=1070552990]
 visible = false
@@ -62,8 +68,6 @@ text = "Observe"
 [node name="communicate" type="Button" parent="options/optionList" unique_id=1766065032]
 layout_mode = 2
 text = "Communicate"
-
-[node name="TODO_option background" type="Node" parent="options" unique_id=941472549]
 
 [node name="pause" type="Control" parent="." unique_id=217942632]
 visible = false
@@ -91,75 +95,6 @@ text = "Save
 layout_mode = 2
 text = "Exit
 "
-
-[node name="junction" type="Control" parent="." unique_id=602683987]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="NJunction" type="Button" parent="junction" unique_id=1608902750]
-layout_mode = 0
-offset_left = 902.0
-offset_top = 3.0
-offset_right = 1021.0
-offset_bottom = 52.0
-text = "NORTH"
-
-[node name="NEJunction" type="Button" parent="junction" unique_id=1229327253]
-layout_mode = 0
-offset_left = 1800.0
-offset_top = 3.0
-offset_right = 1919.0
-offset_bottom = 52.0
-text = "NORTH"
-
-[node name="NWJunction" type="Button" parent="junction" unique_id=190862519]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 3.0
-offset_right = 126.0
-offset_bottom = 52.0
-text = "NORTH"
-
-[node name="WJunction" type="Button" parent="junction" unique_id=284707291]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 493.0
-offset_right = 126.0
-offset_bottom = 542.0
-text = "NORTH"
-
-[node name="EJunction" type="Button" parent="junction" unique_id=1993078371]
-layout_mode = 0
-offset_left = 1791.0
-offset_top = 493.0
-offset_right = 1910.0
-offset_bottom = 542.0
-text = "NORTH"
-
-[node name="SJunction" type="Button" parent="junction" unique_id=1246689953]
-layout_mode = 0
-offset_left = 902.0
-offset_top = 956.0
-offset_right = 1021.0
-offset_bottom = 1005.0
-text = "NORTH"
-
-[node name="SEJunction" type="Button" parent="junction" unique_id=923740310]
-layout_mode = 0
-offset_left = 1800.0
-offset_top = 956.0
-offset_right = 1919.0
-offset_bottom = 1005.0
-text = "NORTH"
-
-[node name="SWJunction" type="Button" parent="junction" unique_id=1873872692]
-layout_mode = 0
-offset_left = 7.0
-offset_top = 956.0
-offset_right = 126.0
-offset_bottom = 1005.0
-text = "NORTH"
 
 [node name="Label" type="Label" parent="." unique_id=249581073]
 layout_mode = 0

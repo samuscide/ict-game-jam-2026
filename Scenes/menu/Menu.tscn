@@ -24,7 +24,7 @@ offset_top = 0.15997314
 offset_right = -0.7600403
 offset_bottom = 0.079956055
 theme = ExtResource("2_fcwyn")
-text = "WORKING TITLE"
+text = "Segador Memorial Hospital"
 
 [node name="Options" type="Control" parent="." unique_id=422722140]
 layout_mode = 1

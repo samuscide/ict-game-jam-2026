@@ -1,11 +1,9 @@
 [gd_scene format=3 uid="uid://c1pk7supipygy"]
 
 [ext_resource type="Script" uid="uid://cvdb55qgycd2d" path="res://Scenes/character/character.gd" id="1_4euov"]
-[ext_resource type="Texture2D" uid="uid://dx1gesimcmxv7" path="res://Assets/ppeperson1.png" id="2_kaakq"]
 
 [node name="Character" type="Node2D" unique_id=589619694]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_4euov")
-texture = ExtResource("2_kaakq")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2000851272]

@@ -54,6 +54,10 @@ var roomLibrary = {
 	"surgery": preload("res://Assets/rooms/Surgery.png")
 }
 
+var characterLibrary = {
+	"robert": preload("res://Assets/characters/ppeperson1.png")
+}
+
 func _enter_tree() -> void:
 	var admin = Junction.duplicate()
 	admin["name"] = "administration"

@@ -1,5 +1,7 @@
 extends Control
 
+@export var direction: PackedScene
+
 @onready var pause = $pause
 @onready var dialog = $dialog
 @onready var options = $options
@@ -11,6 +13,9 @@ func hideControl() -> void:
 	dialog.visible = false
 	options.visible = false
 	junction.visible = false
+
+func setJunction() -> void:
+	pass
 
 func disableNode(node: Button):
 	node.disabled = true
