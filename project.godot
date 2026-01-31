@@ -19,6 +19,7 @@ config/features=PackedStringArray("4.6", "Forward Plus")
 JSONParser="*uid://wwqm0s1n208p"
 gameState="*uid://bibd48r4ed72w"
 AudioManager="*uid://bs24hs11q420p"
+RoomManager="*uid://crxibhqmrw4ai"
 
 [display]
 

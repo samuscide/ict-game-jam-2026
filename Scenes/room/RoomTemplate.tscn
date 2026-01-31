@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://cir6r66f5ktrs"]
 
-[ext_resource type="Script" uid="uid://b7b4k4iymiceg" path="res://Scenes/Rooms/room.gd" id="1_e02cn"]
+[ext_resource type="Script" uid="uid://b7b4k4iymiceg" path="res://Scenes/room/room.gd" id="1_e02cn"]
 [ext_resource type="PackedScene" uid="uid://bmjwyhfidksl2" path="res://Scenes/UI/gameUI.tscn" id="1_oksfc"]
-[ext_resource type="Script" uid="uid://cyq2qlkyco7r2" path="res://Scenes/Rooms/roomParallax.gd" id="2_pcytu"]
-[ext_resource type="Texture2D" uid="uid://f7njo8fwwyq" path="res://Assets/temp/hospital-bed-getty-onurdongel.webp" id="2_y0bk0"]
+[ext_resource type="Script" uid="uid://cyq2qlkyco7r2" path="res://Scenes/room/roomParallax.gd" id="2_pcytu"]
 [ext_resource type="PackedScene" uid="uid://c1pk7supipygy" path="res://Scenes/character/character.tscn" id="4_pcytu"]
 
 [node name="RoomTemplate" type="Node2D" unique_id=1718267346]
@@ -23,6 +22,5 @@ startPos = Vector2(500, 800)
 [node name="background" type="Node2D" parent="Parallax2D" unique_id=2135513620]
 
 [node name="Sprite2D" type="Sprite2D" parent="Parallax2D/background" unique_id=2080803100]
-position = Vector2(968, 537.5)
-scale = Vector2(1.029, 0.7926667)
-texture = ExtResource("2_y0bk0")
+position = Vector2(960, 540)
+scale = Vector2(1.3, 1.3)
