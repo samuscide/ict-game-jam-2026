@@ -1,21 +1,21 @@
 extends Control
 
 @export var direction: PackedScene
+@export var radius := 120.0
 
 @onready var pause = $pause
 @onready var dialog = $dialog
 @onready var options = $options
-@onready var junction = $junction
+@onready var junctions = $junctions
+
+var activeButtons: Array = []
 
 func hideControl() -> void:
 	pass
 	pause.visible = false
 	dialog.visible = false
 	options.visible = false
-	junction.visible = false
-
-func setJunction() -> void:
-	pass
+	junctions.visible = false
 
 func disableNode(node: Button):
 	node.disabled = true
@@ -38,7 +38,6 @@ func _on_return_pressed() -> void:
 	options.visible = true
 	pass # Replace with function body.
 
-
 func _on_save_pressed() -> void:
 	# TODO: give visual feedback that the game was saved
 	pass # Replace with function body.
@@ -53,8 +52,7 @@ func _on_communicate_pressed() -> void:
 	# TODO: set the character communicate to 1 (Need gamestate to access)
 	pass # Replace with function body.
 
-
 func _on_movement_pressed() -> void:
 	hideControl()
-	junction.visible = true
+	junctions.visible = true
 	pass # Replace with function body.

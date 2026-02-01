@@ -5,7 +5,15 @@
 [ext_resource type="Texture2D" uid="uid://cf16g1jq24wn6" path="res://Assets/UI/Arrow2.png" id="2_vv47i"]
 [ext_resource type="Texture2D" uid="uid://cgjjxa2ered7n" path="res://Assets/UI/Arrow3.png" id="3_87u88"]
 
-[node name="TextureButton" type="TextureButton" unique_id=627524166]
+[node name="Control" type="Control" unique_id=1843138461]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_vv47i")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=627524166]
+layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.125
 anchor_bottom = 0.22200002
@@ -18,9 +26,9 @@ texture_hover = ExtResource("3_87u88")
 
 [node name="Label" type="Label" parent="." unique_id=2003407715]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 132.0
-offset_right = 222.0
-offset_bottom = 197.0
-theme_override_font_sizes/font_size = 47
+offset_left = 15.0
+offset_top = 75.0
+offset_right = 219.0
+offset_bottom = 139.925
+theme_override_font_sizes/font_size = 46
 text = "Direction"

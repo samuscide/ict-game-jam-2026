@@ -95,7 +95,7 @@ func _enter_tree() -> void:
 	
 	
 func onJunctionLoad(activeJunction):
-	
+	#$gameUI.build_junction(Junction.adjacentJunctions[1])
 	#save routine 
 	
 	#load routine

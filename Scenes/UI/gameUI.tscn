@@ -2,6 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://b3edlo7i72cqp" path="res://Materials/UI.tres" id="1_rcnvp"]
 [ext_resource type="Script" uid="uid://dwoopjfgxk6vc" path="res://Scenes/UI/game_ui.gd" id="2_nr13x"]
+[ext_resource type="PackedScene" uid="uid://csw0p6dc1t33x" path="res://Scenes/junctions/junction.tscn" id="3_8fuut"]
 [ext_resource type="Texture2D" uid="uid://mp5pvshecj7t" path="res://Assets/UI/Dialogue_filler.png" id="3_g7o0n"]
 
 [node name="GameUi" type="Control" unique_id=1653777319]
@@ -13,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_rcnvp")
 script = ExtResource("2_nr13x")
+direction = ExtResource("3_8fuut")
 
 [node name="dialog" type="Control" parent="." unique_id=315729378]
 visible = false
@@ -105,8 +107,99 @@ offset_bottom = 1057.0
 theme_override_font_sizes/font_size = 21
 text = "ESC: pause menu | Mouse: select item / continue dialog"
 
+[node name="junctions" type="Control" parent="." unique_id=486647129]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="north" parent="junctions" unique_id=1843138461 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 892.0
+offset_top = -3.0
+offset_right = 932.0
+offset_bottom = 37.0
+
+[node name="south" parent="junctions" unique_id=1578527016 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 905.0
+offset_top = 734.0
+offset_right = 945.0
+offset_bottom = 774.0
+
+[node name="TextureButton" parent="junctions/south" index="0" unique_id=627524166]
+rotation = 3.1415927
+
+[node name="east" parent="junctions" unique_id=1990494692 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 1663.0
+offset_top = 389.0
+offset_right = 1703.0
+offset_bottom = 429.0
+
+[node name="TextureButton" parent="junctions/east" index="0" unique_id=627524166]
+rotation = 1.5707964
+
+[node name="west" parent="junctions" unique_id=1954530647 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 379.0
+offset_right = 66.0
+offset_bottom = 419.0
+
+[node name="TextureButton" parent="junctions/west" index="0" unique_id=627524166]
+rotation = -1.5707964
+
+[node name="northeast" parent="junctions" unique_id=2035897304 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 1670.0
+offset_top = 8.0
+offset_right = 1710.0
+offset_bottom = 48.0
+
+[node name="TextureButton" parent="junctions/northeast" index="0" unique_id=627524166]
+rotation = 0.7853982
+
+[node name="northwest" parent="junctions" unique_id=2122391290 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 23.0
+offset_right = 70.0
+offset_bottom = 63.0
+
+[node name="TextureButton" parent="junctions/northwest" index="0" unique_id=627524166]
+rotation = -0.7853982
+
+[node name="southeast" parent="junctions" unique_id=516346416 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 1673.0
+offset_top = 742.0
+offset_right = 1713.0
+offset_bottom = 782.0
+
+[node name="TextureButton" parent="junctions/southeast" index="0" unique_id=627524166]
+rotation = 2.3561945
+
+[node name="southwest" parent="junctions" unique_id=1808378271 instance=ExtResource("3_8fuut")]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 742.0
+offset_right = 72.0
+offset_bottom = 782.0
+
+[node name="TextureButton" parent="junctions/southwest" index="0" unique_id=627524166]
+rotation = -2.3561945
+
 [connection signal="pressed" from="options/optionList/movement" to="." method="_on_movement_pressed"]
 [connection signal="pressed" from="options/optionList/communicate" to="." method="_on_communicate_pressed"]
 [connection signal="pressed" from="pause/VBoxContainer/Return" to="." method="_on_return_pressed"]
 [connection signal="pressed" from="pause/VBoxContainer/Save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="pause/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+
+[editable path="junctions/north"]
+[editable path="junctions/south"]
+[editable path="junctions/east"]
+[editable path="junctions/west"]
+[editable path="junctions/northeast"]
+[editable path="junctions/northwest"]
+[editable path="junctions/southeast"]
+[editable path="junctions/southwest"]
