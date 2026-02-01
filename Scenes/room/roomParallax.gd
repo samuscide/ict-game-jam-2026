@@ -33,7 +33,7 @@ func addCharacters() -> void:
 			charInstance.position = pos
 			characters.append(charInstance)
 			## Will be set by state
-			var tex = "robert" 
+			var tex = RoomManager.activeJunction["npcs"][i]
 			charInstance.assignSprite(tex)
 			charStartPos.append(pos)
 

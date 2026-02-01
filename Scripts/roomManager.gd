@@ -3,7 +3,7 @@ var directions = [0,1,2,3,4,5,6,7,8]
 #[Vector2(0.3437246,.848483),Vector2(0,1)]
 
 
-var activeJunction
+
 
 var dialogueOption = {
 	"isHidden" : false,
@@ -29,16 +29,18 @@ var NPC = {
 	"dialogueState" : 0 #this is where the player is on this NPCs dialogue tree
 }
 
+
+
 var Junction = {
-	"name" : "",
+	"name" : "reception",
 	"directions" : [],
 	"adjacentJunctions" : ["cafeteria","hallway","lab","patient1"] ,
-	"npcs" : [] ,	
+	"npcs" : ["robert","janice","jim"] ,	
 	"items" : []
 }
 
 
-
+var activeJunction = Junction.duplicate()
 
 
 var roomLibrary = {
