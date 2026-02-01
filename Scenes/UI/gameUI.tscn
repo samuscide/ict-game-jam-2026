@@ -14,7 +14,6 @@ grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_rcnvp")
 script = ExtResource("2_nr13x")
-direction = ExtResource("3_8fuut")
 
 [node name="dialog" type="Control" parent="." unique_id=315729378]
 visible = false
@@ -108,6 +107,7 @@ theme_override_font_sizes/font_size = 21
 text = "ESC: pause menu | Mouse: select item / continue dialog"
 
 [node name="junctions" type="Control" parent="." unique_id=486647129]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -190,6 +190,7 @@ offset_bottom = 782.0
 rotation = -2.3561945
 
 [connection signal="pressed" from="options/optionList/movement" to="." method="_on_movement_pressed"]
+[connection signal="pressed" from="options/optionList/observe" to="." method="_on_observe_pressed"]
 [connection signal="pressed" from="options/optionList/communicate" to="." method="_on_communicate_pressed"]
 [connection signal="pressed" from="pause/VBoxContainer/Return" to="." method="_on_return_pressed"]
 [connection signal="pressed" from="pause/VBoxContainer/Save" to="." method="_on_save_pressed"]
