@@ -2,8 +2,6 @@
 
 [ext_resource type="Script" uid="uid://cvdb55qgycd2d" path="res://Scenes/character/character.gd" id="1_4euov"]
 
-[node name="Character" type="Node2D" unique_id=589619694]
+[node name="Sprite2D" type="Sprite2D" unique_id=2000851272]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_4euov")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2000851272]

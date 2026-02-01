@@ -22,6 +22,9 @@ func hideControl() -> void:
 	junctions.visible = false
 	dialogOptions.visible = false
 
+func updateJunctions() -> void:
+	pass
+
 func disableNode(node: Button):
 	node.disabled = true
 

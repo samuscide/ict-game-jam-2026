@@ -55,7 +55,11 @@ var roomLibrary = {
 }
 
 var characterLibrary = {
-	"robert": preload("res://Assets/characters/ppeperson1.png")
+	"robert": preload("res://Assets/characters/ppeperson1.png"),
+	"mia": preload("res://Assets/characters/surgeon.png"),
+	"janice": preload("res://Assets/characters/pressureSurgeon.png"),
+	"jim": preload("res://Assets/characters/security.png"),
+	"janitor": preload("res://Assets/characters/janitor.png")
 }
 
 func _enter_tree() -> void:

@@ -1,8 +1,5 @@
 extends Control
 
-func _ready() -> void:
-	AudioManager.playMusic("menu")
-
 func _on_exit_pressed() -> void:
 	# close the game
 	get_tree().quit()
