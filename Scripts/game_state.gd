@@ -42,3 +42,20 @@ static var stateTemp: Dictionary = {
 		}
 	}
 }
+
+var plyerNpcInfo = {
+		"hasEncountered" : false,
+		"dialoguePosition" : 0,
+		"dialoguePathIDs" : [],
+		"disposition" : 50
+}
+
+
+var playerEncounters = {
+	"npcs" : {
+		"janice": plyerNpcInfo.duplicate(),
+		"robert": plyerNpcInfo.duplicate(),
+		"jim": plyerNpcInfo.duplicate(),
+		"mia": plyerNpcInfo.duplicate(),
+	}
+}

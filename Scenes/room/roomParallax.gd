@@ -4,7 +4,7 @@ extends Parallax2D
 
 @export var sensitivity = 8
 @export var dampening = 5.0
-@export var characterCount = 3
+@export var characterCount = RoomManager.activeJunction["npcs"].size()
 @export var startPos = Vector2(200, 300)
 
 
